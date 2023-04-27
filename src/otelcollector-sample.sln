@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "otelcollector-sample", "otelcollector-sample.csproj", "{7286BB60-91BF-4A34-8131-1968A8C79F23}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{DA879E69-AC8F-4DDC-8D6A-E9794260BA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7286BB60-91BF-4A34-8131-1968A8C79F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7286BB60-91BF-4A34-8131-1968A8C79F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7286BB60-91BF-4A34-8131-1968A8C79F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7286BB60-91BF-4A34-8131-1968A8C79F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA879E69-AC8F-4DDC-8D6A-E9794260BA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA879E69-AC8F-4DDC-8D6A-E9794260BA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA879E69-AC8F-4DDC-8D6A-E9794260BA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA879E69-AC8F-4DDC-8D6A-E9794260BA99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AE2D57B-5A03-401F-B4EC-D02C08F2A555}
+	EndGlobalSection
+EndGlobal
