@@ -22,7 +22,6 @@ builder.Services.AddOpenTelemetry()
     .WithMetrics(builder => builder
         .AddAspNetCoreInstrumentation()
         .AddConsoleExporter()
-        .AddPrometheusExporter()
         .AddOtlpExporter((exporterOptions, readerOptions) =>
         {
             exporterOptions.Endpoint = new Uri("http://otelcollector:4317");
@@ -43,8 +42,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseOpenTelemetryPrometheusScrapingEndpoint();
 
 app.UseHttpsRedirection();
 

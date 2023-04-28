@@ -48,4 +48,17 @@ services:
       - "9090:9090"
     depends_on:
       - otelcollector
-  
+  grafana:
+    image: grafana/grafana
+    restart: always
+    environment:
+      GF_INSTALL_PLUGINS: 'grafana-clock-panel,grafana-simple-json-datasource'
+    volumes:
+      - ./grafana_data:/var/lib/grafana
+      - ./configs/grafana/provisioning/:/etc/grafana/provisioning/
+    env_file:
+      - ./configs/grafana/config.monitoring
+    ports:
+       - 3000:3000
+    depends_on:
+      - prometheus       
